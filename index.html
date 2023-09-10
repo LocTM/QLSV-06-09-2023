@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quản lý sinh viên</title>
+</head>
+<body>
+    <h1>Quản lý sinh viên</h1>
+    <div class="container">
+        <form id="student-form">
+            <input type="text" id="name" placeholder="Họ và tên" required>
+            <input type="text" id="address" placeholder="Địa chỉ" required>
+            <input type="tel" id="phone" placeholder="Số điện thoại" required>
+            <select id="gender" required>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
+            <button type="submit">Thêm mới</button>
+        </form>
+        <div id="search-container">
+            <input type="text" id="search" placeholder="Tìm kiếm sinh viên">
+        </div>
+        <div id="student-list"></div>
+        <div id="pagination"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
